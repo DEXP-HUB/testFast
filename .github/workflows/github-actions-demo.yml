@@ -5,8 +5,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      working-directory: ${{ github.workspace }}
+    - name: Run Python script
       run: python src/test.py
+      working-directory: ${{ github.workspace }}
       
         
       
