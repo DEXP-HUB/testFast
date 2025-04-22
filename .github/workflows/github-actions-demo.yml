@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run Python script
-      run: python src/test.py
+      run: python3 src/test.py
       working-directory: ${{ github.workspace }}
       
         
