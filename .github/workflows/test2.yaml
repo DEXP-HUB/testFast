@@ -1,9 +1,12 @@
 name: Test2
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
+on:  
     label:
       types:
-        - created
+      - created
+    push:
+        branches:
+            -iss-2
 jobs:
     test2:
         runs-on: ubuntu-latest
