@@ -1,0 +1,19 @@
+name: Test2
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+    label:
+      types:
+        - created
+jobs:
+    test2:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
+
+
+
+
+
+        
+
