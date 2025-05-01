@@ -8,7 +8,7 @@ jobs:
 
     steps:
         - name: Echo GitHub
-          run: echo ${{ github.actor }}
+          run: echo ${{ toJson(github) }}
         
         
 
