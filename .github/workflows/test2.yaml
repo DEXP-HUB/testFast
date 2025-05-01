@@ -1,4 +1,4 @@
-name: Test1
+name: Test2
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 
@@ -8,7 +8,7 @@ jobs:
 
     steps:
         - name: Echo GitHub
-          run: echo ${{ toJson(github) }}
+          run: echo "${{ toJson(github) }}"
         
         
 
