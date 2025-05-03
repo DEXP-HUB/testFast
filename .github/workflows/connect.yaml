@@ -13,5 +13,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSHKEY }}
-          source: "tests/a.txt,tests/b.txt"
+          source: "tests/test_docs.py,tests/test_get.py"
           target: "/home"
