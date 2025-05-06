@@ -12,7 +12,7 @@ jobs:
         with:
           IP: ${{ secrets.HOST }}
           USER: ${{ secrets.USERNAME }}
-          KEY: ${{ secrets.SSHKEY }}
+          KEY: ${{ secrets.PASSWORD }}
           FOLDER: "/root/test"
           RUN: "ls -a; pwd"
 
