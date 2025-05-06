@@ -8,13 +8,13 @@ jobs:
       - name: Get repository
         uses: actions/checkout@v4
       - name: Deploy
-        uses: sebastianjnuwu/ssh-action-deploy@v4
+        uses: tiyee/action-ssh@v1.0.1
         with:
-          IP: ${{ secrets.HOST }}
-          USER: ${{ secrets.USERNAME }}
-          KEY: ${{ secrets.PASSWORD }}
-          FOLDER: "/root/test"
-          RUN: "ls -a; pwd"
+          host: ${{ secrets.HOST }}
+          port: ${{ secrets.PORT }}
+          username: ${{ secrets.USERNAME }}
+          privateKey: ${{ secrets.SSHKEY }}
+          command: 'ls -alh'
 
     
 
