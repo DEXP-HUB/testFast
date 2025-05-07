@@ -14,7 +14,11 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: 22
-          script: whoami
+          script: |
+            cd /root/test
+            git pull https://github.com/DEXP-HUB/testFast.git
+
+
             
 
     
