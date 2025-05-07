@@ -5,7 +5,7 @@ jobs:
     name: Deploy project
     runs-on: ubuntu-latest
     steps:
-      - name: Get repository
+      - name: Get repositor
         uses: actions/checkout@v4
       - name: Deploy
         uses: tiyee/action-ssh@v1.0.1
