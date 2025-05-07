@@ -13,7 +13,7 @@ jobs:
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
           username: ${{ secrets.USERNAME }}
-          privateKey: ${{ secrets.SSH_KEY }}
+          privateKey: ${{ secrets.SSH_KEY_PUB }}
           command: 'ls -alh'
 
     
